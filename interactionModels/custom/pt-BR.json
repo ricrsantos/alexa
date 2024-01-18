@@ -1,0 +1,278 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "token",
+              "elicitationRequired": false,
+              "validations": [
+                {
+                  "type": "isLessThan",
+                  "prompt": "Slot.Validation.923969081080.1337232421926.230603788321",
+                  "value": "999999"
+                }
+              ],
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "name": "intentAdicionar",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "sair"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "token",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "intentAdicionar",
+          "samples": [
+            "cadastre {token}",
+            "cadastrar {token}",
+            "adicione {token}",
+            "vincule {token}",
+            "inclua {token}",
+            "incluir {token}",
+            "vincular {token}",
+            "associar {token}",
+            "adicionar {token}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "central",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentLigar",
+          "samples": [
+            "movimente {central}",
+            "feche {central}",
+            "abra {central}",
+            "fechar {central}",
+            "movimentar {central}",
+            "abrir {central}",
+            "proteger {central}",
+            "proteja {central}",
+            "ative {central}",
+            "arme {central}",
+            "armar {central}",
+            "ativar {central}",
+            "ligue {central}",
+            "ligar {central}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "dispositivo",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentSelecionar",
+          "samples": [
+            "cenectar a {dispositivo}",
+            "conectar ao {dispositivo}",
+            "conecte a {dispositivo}",
+            "conecte ao {dispositivo}",
+            "vincule {dispositivo}",
+            "vincular {dispositivo}",
+            "selecionar {dispositivo}",
+            "vá para {dispositivo}",
+            "ir para {dispositivo}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "central",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentDesligar",
+          "samples": [
+            "desligar  {central}",
+            "desligue  {central}",
+            "desarme {central}",
+            "desarmar {central}",
+            "desative {central}",
+            "desativar {central}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "central",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentStatus",
+          "samples": [
+            "situação {central}",
+            "como você esta {central}",
+            "agora {central}",
+            "condição {central}",
+            "estado {central}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "setor",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentBloquear",
+          "samples": [
+            "bloqueia zona {setor}",
+            "bloqueia setor {setor}",
+            "bloquear zona {setor}",
+            "bloquear setor {setor}",
+            "inibir setor {setor}",
+            "inibir zona {setor}",
+            "inibir {setor}",
+            "bloquear {setor}",
+            "bloqueio {setor}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "setor",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentDesbloquear",
+          "samples": [
+            "libere zona {setor}",
+            "libere setor {setor}",
+            "libere {setor}",
+            "liberar setor {setor}",
+            "liberar zona {setor}",
+            "liberar {setor}",
+            "desbloqueie setor {setor}",
+            "desbloqueie zona {setor}",
+            "desbloqueie {setor}",
+            "desbloquear setor {setor}",
+            "desbloquear zona {setor}",
+            "desbloquear {setor}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "pgm",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentLigarPGM",
+          "samples": [
+            "ligar saída {pgm}",
+            "ligue saída {pgm}",
+            "ligue pgm {pgm}",
+            "ligar pgm {pgm}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "pgm",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentDesligarPGM",
+          "samples": [
+            "desligue saída {pgm}",
+            "desligue pgm {pgm}",
+            "desligar saída {pgm}",
+            "desligar pgm {pgm}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "pgm",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "intentStatusPGM",
+          "samples": [
+            "condição saída {pgm}",
+            "situação saída {pgm}",
+            "estado saída {pgm}",
+            "condição pgm {pgm}",
+            "situação pgm {pgm}",
+            "estado pgm {pgm}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "intentSetores",
+          "samples": [
+            "situação zonas",
+            "situação setores",
+            "condição setores",
+            "condição zonas",
+            "estado zonas",
+            "estado setores",
+            "zonas",
+            "setores"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "intentMeus",
+          "samples": [
+            "meus dispositivo",
+            "meu dispositivo",
+            "dispositivos",
+            "dispositivo",
+            "meus dispositivos"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "f. k. s."
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "informe seu token de seis digitos "
+          }
+        ],
+        "id": "Slot.Validation.923969081080.1337232421926.230603788321"
+      }
+    ]
+  }
+}

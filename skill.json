@@ -1,0 +1,72 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "FKS Alarmes e Acessorios.",
+          "examplePhrases": [
+            "Alexa, abrir f. k. s.",
+            "Olá",
+            "Ajuda"
+          ],
+          "keywords": [
+            "FKS",
+            "Alarmes",
+            "central",
+            "de",
+            "alarme",
+            "centrais",
+            "de",
+            "alarme",
+            "automatizador",
+            "de",
+            "portão",
+            "portão"
+          ],
+          "name": "FKS Alarmes",
+          "description": "Esta skill Alexa tem como objetivo de automatizar e integrar todos os dispositivos da empresa FKS Alarmes, entre eles estão:\nSP2008\nSP08\nSP02\nAW100\nAW200\nPW100\nPW200\nEntre outros.",
+          "smallIconUri": "file://assets/images/pt-BR_smallIconUri.png",
+          "updatesDescription": "Versão de Certificação",
+          "largeIconUri": "file://assets/images/pt-BR_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Olá \\nPara executar os testes você precisa de uma chave / token, para os seus testes use este numero 123654.\\nObrigado.\\nWagner Lopes\\n\"}",
+      "category": "SMART_HOME",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "BR"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:252998870817:function:6b027363-2eb0-4061-b941-ca4a4dacc59f:Release_0"
+        },
+        "interfaces": [],
+        "locales": {}
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "pt-BR": {
+          "termsOfUseUrl": "https://fksweb.com.br/politica",
+          "privacyPolicyUrl": "https://fksweb.com.br/politica"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
